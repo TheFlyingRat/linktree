@@ -4,76 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/skeleton.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300&display=swap');
-        body { background: #222; background-image: url("assets/img/background/city.jpg"); background-size: auto; background-blend-mode: overlay; color: #ccc; text-align: center; margin-top: 15px; font-family: "Karla", Helvetica; -ms-overflow-style: none; scrollbar-width: none;}
-        @media only screen and (min-width: 601px){
-            #header > h1 { font-size: 6rem}
-        }
-        @media only screen and (max-width: 600px){
-            #header > h1 { font-size: 4rem}
-        }
-        button {
-            color: #ccc;
-            width: min(60%, 750px);
-            font-size: 1.2em;
-        }
-        #content > * {
-            border-radius: 0px;
-            margin-top: 20px;
-        }
-        #content > *:visited, #content > *:focus {
-            color: #ccc;
-            border-color: #ccc;
-        }
-        #content > *:hover {
-            color: inherit;
-            border-color: inherit;
-            opacity: 68% !important;
-        }
-        .noselect {
-            -webkit-touch-callout: none; 
-            -webkit-user-select: none;
-            -khtml-user-select: none; 
-            -moz-user-select: none; 
-            -ms-user-select: none;
-            user-select: none;                              
-        }
-        body::-webkit-scrollbar {
-            display: none;
-        }
-        .bodyContent {
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-        }
-        #content {
-            margin-top: 3%;
-        }
-        #headerContainer {
-            width: fit-content; margin-top:5px; line-height: 2px;
-        }
-    </style>
+    <link rel="preload" as="script" href="https://cdn.theflyingrat.com/assets/repository/main.js">
+    <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    <link rel="preload" as="style" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
+    <link rel="preload" as="style" href="https://cdn.theflyingrat.com/assets/css/skeleton.min.css">
+    <link rel="preload" as="image" href="assets/img/background/city.jpg">
+    <link rel="preload" as="style" href="assets/css/home.css">
+    <style>body, html {display: none; opacity: 0}</style>
     <title>Links</title>
 </head>
 <body class="noselect">
     <div id="header" class="bodyContent">
         <div id="headerContainer">
-            <img draggable="false" src="assets/img/profile_small.webp" style="border: 2px solid #ccc; border-radius: 100px; image-rendering: smooth;" width=140>
+            <img draggable="false" src="assets/img/profile_small.webp" style="border: 2px solid #ccc; border-radius: 100px; image-rendering: smooth;" width="140px" height="140px">
             <h1 style="margin-bottom: 2px; cursor: pointer;" onclick="window.location.href='https://theflyingrat.com'">Joey M</h1>
             <h5>Victoria, Australia</h5>
         </div>  
     </div>
     <div id="content" class="bodyContent">
-        <button>Website</button>
-        <button>Website</button>
-        <button>Website</button>
-        <button>Website</button>
-        <button>Website</button>
-        <button>Website</button>
-        <button>Website</button>
+        <button onClick="openLink('Website');">Website</button>
+        <button onClick="openLink('GitHub');">GitHub</button>
+        <button onClick="openLink('Instagram');">Instagram</button>
+        <button onClick="openLink('Twitter');">Twitter</button>
+        <button onClick="openLink('TikTok');">TikTok</button>
+        <button onClick="openLink('Snapchat');">Snapchat</button>
+        <button onClick="openLink('Discord');">Discord</button>
+        <button onClick="openLink('YouTube');">YouTube</button>
+        <button onClick="openLink('Reddit');">Reddit</button>
+        <button onClick="openLink('Spotify');">Spotify</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.theflyingrat.com/assets/repository/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/skeleton.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <style>body, html {display: block; opacity: 1}</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdn.theflyingrat.com/assets/repository/main.js" defer></script>
 </body>
 </html
