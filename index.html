@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <style>html {display: none; opacity: 0}</style>
     <meta name="name" content="Links - TheFlyingRat">
     <meta name="description" content="This page contains all of my social medias">
     <meta name="keywords" content="TheFlyingRat, Joey M, Software Developer, Web Development, Scripting languages, The, Flying, Rat, socials, youtube, snapchat, github">
@@ -22,7 +23,6 @@
     <link rel="preload" as="style" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
     <link rel="preload" as="style" href="https://cdn.theflyingrat.com/assets/css/skeleton.min.css">
     <link rel="preload" as="style" href="https://cdn.theflyingrat.com/assets/links/assets/css/home.css">
-    <style>body, html {display: none; opacity: 0}</style>
     <title>Links - TheFlyingRat</title>
     <script src="https://api.theflyingrat.com/image/random.js" async></script>
 </head>
@@ -49,13 +49,16 @@
     <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/css/skeleton.min.css">
     <link rel="stylesheet" href="https://cdn.theflyingrat.com/assets/links/assets/css/home.css">
-    <style>body, html {display: block; opacity: 1}</style>
     <script>console.log("DOM loaded");</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="https://cdn.theflyingrat.com/assets/repository/main.js" defer></script>
     <script defer>
         function openLink(url) {
             window.location.href = "https://api.theflyingrat.com/redir?" + url;
+        }
+        function showBody() {
+            document.getElementById("html").style.display = "block";
+            document.getElementById("html").style.opacity = "1";
         }
     </script>
 </body>
